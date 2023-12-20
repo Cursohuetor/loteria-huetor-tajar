@@ -49,13 +49,18 @@
       font-weight: bold;
       color: red;
     }
+    div.logo{
+        margin: 0 auto;
+    }
   </style>
 </head>
 <body>
   <div id="container">
     <h2>Huétor Tájar</h2>
     <h2>Lotería de Navidad 2023</h2>
-
+    <div class="logo">
+    <img src="logo.png" alt="logotipo" width="150px">
+</div>
     <!-- Campo de entrada para el número de lotería -->
     <label for="numero">Introduce tu número de lotería:</label>
     <input type="text" id="numero" placeholder="Escribe aquí">
@@ -92,7 +97,7 @@
       if (premioEncontrado) {
         document.getElementById("result").innerText = "¡Felicidades! Tu número es el " + premioEncontrado.texto + ".";
       } else {
-        document.getElementById("resultno").innerText = "Lo siento, tu número no ha sido premiado. Sigue intentándolo.";
+        document.getElementById("resultno").innerText = "Lo siento, tu número no ha sido premiado. Sigue intentándolo. \n Los números premiados han sido: \n1º 11111 \n2º 22222 \n3º 33333 \n4º 44444 \n5º 55555";
       }
     }
   </script>
