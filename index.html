@@ -89,6 +89,8 @@ background: linear-gradient(313deg, rgba(250,248,248,1) 0%, rgba(215,27,32,0.874
   <div id="container">
     <h2>Huétor Tájar</h2>
     <h2>Lotería de Navidad 2023</h2>
+    <p>Comprueba si te ha tocado el <b>Primer</b>, <b>Segundo</b> o <b>Tercer</b> premio de la Lotería de Navidad 2023</p>
+    <h3>¡Suerte!</h3>
     <div class="logo">
     <img src="logo.png" alt="logotipo" width="150px">
 </div>
@@ -105,11 +107,9 @@ background: linear-gradient(313deg, rgba(250,248,248,1) 0%, rgba(215,27,32,0.874
   <script>
     // Lista de números premiados con sus respectivos textos
     var premios = [
-      { numero: "12345", texto: "Primer premio" },
-      { numero: "23451", texto: "Segundo premio" },
-      { numero: "34512", texto: "Tercer premio" },
-      { numero: "45123", texto: "Cuarto premio" },
-      { numero: "51234", texto: "Quinto premio" }
+      { numero: "11111", texto: "Primer premio" },
+      { numero: "22222", texto: "Segundo premio" },
+      { numero: "33333", texto: "Tercer premio" }
     ];
 
     function comprobarNumero() {
@@ -128,7 +128,7 @@ background: linear-gradient(313deg, rgba(250,248,248,1) 0%, rgba(215,27,32,0.874
       if (premioEncontrado) {
         document.getElementById("result").innerText = "¡Felicidades! Tu número es el " + premioEncontrado.texto + ".";
       } else {
-        document.getElementById("resultno").innerText = "Lo siento, tu número no ha sido premiado. Sigue intentándolo. \n Los números premiados han sido: \n1º 11111 \n2º 22222 \n3º 33333 \n4º 44444 \n5º 55555";
+        document.getElementById("resultno").innerText = "Lo siento, tu número no ha sido premiado. Sigue intentándolo. \n Los números premiados han sido: \n1º Todavía no premiado \n2º Todavía no premiado \n3º Todavía no premiado";
       }
     }
   </script>
